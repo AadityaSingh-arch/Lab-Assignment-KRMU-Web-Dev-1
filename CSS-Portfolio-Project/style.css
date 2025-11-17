@@ -1,0 +1,438 @@
+  /* ===============================
+   Portfolio Website Styles
+   Author: Aaditya Singh
+   =============================== */
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap'); 
+
+
+body {
+  font-family: 'Great Vibes', cursive, 'Poppins', sans-serif;
+  background-color: #45505b;
+  color: rgb(240, 134, 134);
+  margin: 0;
+  padding: 0; 
+  scroll-behavior :smooth;
+  }
+
+
+.main {
+  color: rgb(240, 134, 134);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Base body/font */
+body {
+  font-family: 'Great Vibes', cursive, 'Poppins', sans-serif;
+  background-color: #45505b;
+  color: rgb(240, 134, 134);
+}
+
+.main {
+  color: rgb(240, 134, 134);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.main:hover {
+  color: white;
+}
+
+.header {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding:20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Utility responsive tweaks to prevent horizontal overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.navigation ul {
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+#projects {
+  padding: 40px 10px;
+}
+
+#projects ul {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projects li {
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1 1 280px;
+}
+
+#skills table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 480px;
+}
+
+.back-to-top, #back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #68201b;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  z-index: 999;
+}
+
+@media screen and (max-width: 720px) {
+  main { padding: 0 12px; }
+  #hero { padding: 40px 12px; }
+  #projects ul { padding: 12px; gap: 12px; }
+  #skills th, #skills td { padding: 12px; font-size: 1em; }
+}
+  display: inline-block;
+}
+
+.main:hover {
+  color: white;
+}  
+
+
+.header {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding:20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 1.5s;
+}
+
+.navigation a:hover {
+  background-color: #4b5563;
+}
+
+
+#hero {
+  text-align: center;
+  background: #68201b;
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 1px;
+}
+
+#hero h2 {
+  font-size: 2.5px;
+}
+
+
+#about {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#about img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
+#projects {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+#projects li {
+  background: #e0f2fe;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #68201b;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+  flex: 1;
+  min-width: 250px;
+}
+
+@media screen and (max-width: 720px) {
+  #projects ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #projects li {
+    flex: 1 1 100%;
+  }
+}
+
+
+#skills {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#skills table {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+}
+
+#skills th {
+  background-color:#68201b;
+  color: white;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+#skills td {
+  background-color: #f9fafb;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#skills tr:nth-child(even) td {
+  background-color: #e5e7eb;
+}
+
+
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form textarea {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+form label {
+  width: 80%;
+  max-width: 400px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: #68201b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #68201b;
+}
+
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Final overrides to ensure no horizontal overflow for narrow screens */
+/* Force project items to wrap and constrain their widths */
+#projects, #projects ul {
+  box-sizing: border-box;
+}
+
+#projects ul {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  padding: 12px !important;
+  gap: 12px !important;
+}
+
+#projects li {
+  flex: 1 1 260px !important;
+  min-width: 0;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+/* Ensure contact form elements never exceed the viewport */
+#contact, #contact * {
+  box-sizing: border-box;
+}
+
+#contact form {
+  width: 100%;
+  max-width: 520px;
+  padding: 0 10px;
+}
+
+#contact form label {
+  display: block;
+  width: 100%;
+  margin: 8px 0 4px;
+  text-align: left;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form select {
+  width: 100%;
+  max-width: 100%;
+  margin: 6px 0 12px;
+}
+
+/* Reduce any default large paddings on the projects list on tiny screens */
+@media screen and (max-width: 420px) {
+  #projects ul { padding: 8px; gap: 8px; }
+  #about img { max-width: 260px; width: 60%; }
+}
+
+/* Back-to-top Button
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #68201b;
+  color: white;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  display: none;
+  text-align: center;
+  z-index: 999;
+  transition: 0.3s;
+  font-size: 1.2em;
+}
+
+#back-to-top:hover {
+  background-color: #a03028;
+  transform: translateY(-3px);
+}
+
+#back-to-top.show {
+  display: block;
+}
+
+#back-to-top:hover {
+  background-color: #68201b;
+} */
+
+/* Ensure Back-to-top is visible (fallback override) */
+#back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #68201b;
+  color: #fff;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  z-index: 9999;
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#back-to-top:hover {
+  transform: translateY(-3px);
+  background: #a03028;
+}
+
+/* Visual Separator */
+/* hr {
+  border: 0;
+  height: 2px;
+  background: #68201b;
+  margin: 40px 0;
+} */
+ 

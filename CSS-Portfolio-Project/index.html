@@ -1,0 +1,106 @@
+<!--
+Project: Personal Portfolio Website
+Page: index.html
+Author: Aaditya Singh
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <a href="#main" class="main">Skip to main content</a>
+
+  <header class="header">
+    <h1>My Portfolio Website</h1>
+    <nav class="navigation">
+      <ul>
+       <div class="button"><li><a href="#about">About</a></li></div>
+        <div class="button"><li><a href="#projects">Projects</a></li></div>
+        <div class="button"><li><a href="#skills">Skills</a></li></div>
+        <div class="button"><li><a href="#contact">Contact</a></li></div>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+
+    <section id="hero">
+      <h1>Hello!</h1>
+      <p>My name is Aaditya Singh. Welcome to my first portfolio website.</p>
+    </section>
+
+        <section id="about">      <h2>About Me</h2>
+      <img src="image.jpg" alt="Aaditya Singh"><br>Aaditya Singh
+      <p>I am a traveler, trying to find things best suited for me. I am a polymath, which means I have a wide range of interests and knowledge.</p>
+    </section>
+
+        <section id="projects">
+      <h2>Projects</h2>
+      
+      <ul>
+        <li><article>Project 1: A stock portfolio profit/loss calculator using Python</article></li>
+        <li><article>Project 2: My personal blog page</article></li>
+        <li><article>Project 3: A calorie tracker app</article></li> 
+      </ul>
+      
+    </section>
+
+        <section id="skills">
+      <h2>My Skills</h2>
+      <table border="1">
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>intermediate</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>beginner</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Learning</td>
+        </tr>
+      </table>
+    </section>
+
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Type your message here" required></textarea><br><br>
+
+        <input type="submit" value="Send">
+      </form>
+    </section>
+      <!-- <div class="button">
+      <link rel="back to top" href="Lab1.html">Back to Top</a>
+  </div> -->
+  </main>
+
+  <footer>
+    <p>Made by Aaditya Singh - 2025</p>
+  </footer>
+
+  <!-- Simplified Back-to-Top anchor (no JavaScript) -->
+  <a href="#main" id="back-to-top" aria-label="Back to top">↑</a>
+</body>
+</html>
