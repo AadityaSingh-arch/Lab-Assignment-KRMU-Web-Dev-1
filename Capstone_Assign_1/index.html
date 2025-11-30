@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Threads 東京 | Japanese Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Gothic Font Combination -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <a href="#main" class="skip">Skip to main content</a>
+
+    <nav>
+       <div class="logo">Tokyo Threads 東京</div>
+    <ul>
+    <li><a href="#">New Drops 新作</a></li>
+    <li><a href="#">Techwear</a></li>
+    <li><a href="#">Oversized Fits</a></li>
+    <li><a href="#">Haori / Kimono Tops</a></li>
+    <li><a href="#contact">Contact お問合せ</a></li>
+    </ul>
+
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <h1>Tokyo Street & Neo-Urban Wear</h1>
+<p>Monochrome fits. Layered silhouettes. Inspired by Shibuya culture.</p>
+<button>Explore Collection 今すぐ見る</button>
+</section>
+
+<main id="main">
+
+<!-- ================= PRODUCT GRID ================= -->
+<section class="products section">
+    <h2>New Blood — Latest Drops</h2>
+
+    <div class="products-layout">
+
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <label>Category
+                <select>
+                    <option>All</option>
+                    <option>Coats</option>
+                    <option>Accessories</option>
+                    <option>Jewellery</option>
+                </select>
+            </label>
+
+            <label>Price
+                <select>
+                    <option>All</option>
+                    <option>Under ₹2000</option>
+                    <option>₹2000 - ₹4000</option>
+                    <option>Above ₹4000</option>
+                </select>
+            </label>
+
+            <button>Apply Filters</button>
+        </aside>
+
+        <div class="grid">
+
+            <article class="card">
+                <img src="images/product1.jpg" alt="Black Haori Street Jacket">
+                <h3>Black Haori Street Jacket</h3> 
+                <p>₹2999</p>
+                <button>Add to Ritual Cart</button>
+            </article>
+            <article class="card">
+                <img src="images/product2.webp" alt="Oversized Japanese Graphic Tee">
+                <h3>Oversized Japanese Graphic Tee</h3> 
+                <p>₹1599</p>
+                <button>Add to Ritual Cart</button>
+            </article>
+
+            <article class="card">
+                <img src="images/product3.webp" alt="Samurai Grid Cargo Pants">
+                <h3>Samurai Grid Cargo Pants</h3>   
+                <p>₹2499</p>
+                <button>Add to Ritual Cart</button>
+            </article>
+
+            <article class="card">
+                <img src="images/product4.webp" alt="Techwear Tactical Vest">
+                <h3>Techwear Tactical Vest</h3>     
+                <p>₹3299</p>
+                <button>Add to Ritual Cart</button>
+            </article>
+
+        </div> <!-- .grid -->
+
+    </div> <!-- .products-layout -->
+
+</section> <!-- .products -->
+
+<!-- ================= REVIEWS ================= -->
+<section class="reviews section">
+    <h2>Customer Reviews お客様の声</h2>
+    <div class="review">"Absolutely love the aesthetic and quality! Perfect for my urban adventures." — A.</div>
+    <div class="review">"Feels like walking in Shibuya — top tier quality and silhouette."</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact section">
+    <h2>Contact Us</h2>
+    <p>Questions, custom orders</p>
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your good name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@yahoo.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Describe your need..."></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span>Tokyo Threads 東京</p>
+</footer>
+
+<script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
